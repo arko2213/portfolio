@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arko | Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    
+    <nav class="navbar">
+        <div class="logo">Arko.</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Arko</span></h1>
+                <p class="subtitle">A passionate professional creating beautiful digital experiences.</p>
+                <div class="cta-buttons">
+                    <a href="arko resume (1).pdf" target="_blank" class="btn primary-btn">View Resume</a>
+                    <a href="#contact" class="btn secondary-btn">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="glass-card">
+                <p>Welcome to my personal portfolio. I am dedicated to delivering high-quality work and constantly learning new skills to improve my craft. Feel free to download my resume to see my detailed experience and qualifications.</p>
+            </div>
+        </section>
+        
+        <section id="skills" class="skills">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">UI/UX Design</div>
+                <div class="skill-card">Problem Solving</div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <div class="glass-card contact-card">
+                <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                <a href="mailto:contact@example.com" class="btn primary-btn mt-2">Email Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Arko. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple scroll animation for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
